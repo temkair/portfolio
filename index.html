@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>송성윤 | Portfolio</title>
+<meta name="description" content="한남대학교 AI융합학과 송성윤의 포트폴리오">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css" />
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="noise"></div>
+
+<!-- ===== NAV ===== -->
+<header class="nav">
+  <a class="brand" href="#hero">SY.<span class="dot">/</span>SONG</a>
+  <nav>
+    <ul>
+      <li><a href="#about">소개</a></li>
+      <li><a href="#skills">기술</a></li>
+      <li><a href="#projects">프로젝트</a></li>
+      <li><a href="#history">이력</a></li>
+      <li><a href="#contact">연락처</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ===== HERO ===== -->
+<section id="hero" class="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <svg class="net" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+      <g class="net-lines" stroke="url(#g1)" stroke-width="1" fill="none">
+        <line x1="100" y1="120" x2="380" y2="260"/>
+        <line x1="380" y1="260" x2="220" y2="480"/>
+        <line x1="380" y1="260" x2="640" y2="180"/>
+        <line x1="640" y1="180" x2="900" y2="340"/>
+        <line x1="900" y1="340" x2="1080" y2="140"/>
+        <line x1="220" y1="480" x2="480" y2="620"/>
+        <line x1="480" y1="620" x2="760" y2="560"/>
+        <line x1="760" y1="560" x2="960" y2="700"/>
+        <line x1="640" y1="180" x2="480" y2="620"/>
+        <line x1="900" y1="340" x2="760" y2="560"/>
+      </g>
+      <defs>
+        <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#5EE7FF"/>
+          <stop offset="1" stop-color="#7C5CFC"/>
+        </linearGradient>
+      </defs>
+      <g class="net-dots" fill="#5EE7FF">
+        <circle cx="100" cy="120" r="4"/>
+        <circle cx="380" cy="260" r="5"/>
+        <circle cx="220" cy="480" r="4"/>
+        <circle cx="640" cy="180" r="4"/>
+        <circle cx="900" cy="340" r="5"/>
+        <circle cx="1080" cy="140" r="4"/>
+        <circle cx="480" cy="620" r="4"/>
+        <circle cx="760" cy="560" r="5"/>
+        <circle cx="960" cy="700" r="4"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="hero-top fade-in" data-delay="0">
+    <div class="hero-top-text">
+      <span class="eyebrow">AI융합학과 · 2학년</span>
+      <span class="eyebrow">한남대학교</span>
+    </div>
+    <div class="hero-avatar">
+      <img src="image/profile.jpg" alt="송성윤 프로필 사진">
+    </div>
+  </div>
+
+  <h1 class="hero-name fade-in" data-delay="150">
+    <span class="grad">송성윤</span>
+  </h1>
+
+  <div class="hero-bottom">
+    <p class="hero-vision fade-in" data-delay="350">
+      하나를 알려주면 하나는 확실히 배우며,<br>
+      안정적으로 성장하는 개발자
+    </p>
+    <a href="#contact" class="btn-gradient fade-in" data-delay="500">Contact Me</a>
+  </div>
+
+</section>
+
+<!-- ===== MARQUEE ===== -->
+<section class="marquee-section">
+  <div class="marquee-row">
+    <div class="marquee-track">
+      <span>PYTHON</span><span>AI</span><span>HTML</span><span>CSS</span><span>JAVASCRIPT</span><span>C</span><span>C++</span>
+      <span>PYTHON</span><span>AI</span><span>HTML</span><span>CSS</span><span>JAVASCRIPT</span><span>C</span><span>C++</span>
+      <span>PYTHON</span><span>AI</span><span>HTML</span><span>CSS</span><span>JAVASCRIPT</span><span>C</span><span>C++</span>
+    </div>
+  </div>
+  <div class="marquee-row reverse">
+    <div class="marquee-track">
+      <span>AI융합</span><span>OA MASTER</span><span>웹디자인기능사</span><span>DATA</span><span>PROBLEM SOLVING</span>
+      <span>AI융합</span><span>OA MASTER</span><span>웹디자인기능사</span><span>DATA</span><span>PROBLEM SOLVING</span>
+      <span>AI융합</span><span>OA MASTER</span><span>웹디자인기능사</span><span>DATA</span><span>PROBLEM SOLVING</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="about">
+  <h2 class="section-heading grad fade-in">About Me</h2>
+  <p class="about-text fade-in" data-delay="100">
+    한남대학교 AI융합학과에 재학 중인 2학년 학생입니다. 특성화고 IT콘텐츠과에서 웹·자격증 공부로 개발의 기초를 다졌고,
+    지금은 AI 융합 전공을 통해 관심 분야를 넓혀가고 있습니다. 아직 특정 분야를 정하기보다,
+    다양한 방향을 직접 경험하며 저에게 맞는 길을 찾아가는 중입니다.
+  </p>
+
+  <div class="timeline fade-in" data-delay="150">
+    <div class="tl-item">
+      <span class="tl-year">2022 – 2025</span>
+      <div class="tl-body">
+        <h3>세종장영실고등학교 IT콘텐츠과</h3>
+        <p>특성화고에서 IT 콘텐츠 관련 이론과 실습을 배우며 자격증 취득 및 대회 참가</p>
+      </div>
+    </div>
+    <div class="tl-item">
+      <span class="tl-year">2025 –</span>
+      <div class="tl-body">
+        <h3>한남대학교 AI융합학과 입학</h3>
+        <p>현재 2학년 재학 중</p>
+      </div>
+    </div>
+  </div>
+  <p class="tl-more">자격증과 수상 내역은 아래 <a href="#history">Certificates &amp; Awards</a>에서 확인할 수 있어요.</p>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills" class="skills">
+  <h2 class="section-heading dark fade-in">Skills</h2>
+
+  <div class="skill-grid fade-in" data-delay="100">
+    <div class="skill-row">
+      <span class="skill-name">AI</span>
+      <div class="skill-bar"><div class="skill-fill" style="--w:86%"></div></div>
+      <span class="skill-pct">86%</span>
+    </div>
+    <div class="skill-row">
+      <span class="skill-name">Python</span>
+      <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
+      <span class="skill-pct">80%</span>
+    </div>
+    <div class="skill-row">
+      <span class="skill-name">C</span>
+      <div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div>
+      <span class="skill-pct">70%</span>
+    </div>
+    <div class="skill-row">
+      <span class="skill-name">HTML</span>
+      <div class="skill-bar"><div class="skill-fill" style="--w:67%"></div></div>
+      <span class="skill-pct">67%</span>
+    </div>
+    <div class="skill-row">
+      <span class="skill-name">CSS</span>
+      <div class="skill-bar"><div class="skill-fill" style="--w:65%"></div></div>
+      <span class="skill-pct">65%</span>
+    </div>
+    <div class="skill-row">
+      <span class="skill-name">JavaScript</span>
+      <div class="skill-bar"><div class="skill-fill" style="--w:30%"></div></div>
+      <span class="skill-pct">30%</span>
+    </div>
+    <div class="skill-row">
+      <span class="skill-name">C++</span>
+      <div class="skill-bar"><div class="skill-fill" style="--w:25%"></div></div>
+      <span class="skill-pct">25%</span>
+    </div>
+  </div>
+
+  <p class="skill-note fade-in" data-delay="200">
+    수치는 자체 평가 기준이며, 현재 AI융합학과 커리큘럼을 통해 데이터·AI 관련 역량을 새롭게 쌓아가고 있습니다.
+  </p>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects" class="projects">
+  <h2 class="section-heading grad fade-in">Projects</h2>
+
+  <div class="carousel">
+    <div class="carousel-viewport">
+      <div class="carousel-track">
+
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-num">01</span>
+            <div class="project-title">
+              <span class="project-cat">Personal · Web</span>
+              <h3>포트폴리오 웹버전</h3>
+            </div>
+            <a href="https://rad-caramel-300953.netlify.app/" target="_blank" rel="noopener" class="btn-ghost">Live Project</a>
+          </div>
+          <div class="project-body">
+            <img src="image/project1.png" alt="포트폴리오 웹버전 스크린샷" loading="lazy">
+            <div class="project-desc">
+              <p>제 첫 프로젝트입니다. 웹디자인기능사 자격증을 취득한 직후, 배운 기술을 직접 응용해보고 싶어서
+              AI 도움 없이 하나부터 열까지 스스로 만든 포트폴리오 사이트입니다.</p>
+              <p class="project-stack">HTML · CSS · JavaScript</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-num">02</span>
+            <div class="project-title">
+              <span class="project-cat">Personal · Web</span>
+              <h3>타이머 사이트</h3>
+            </div>
+          </div>
+          <div class="project-body">
+            <img src="image/project2.png" alt="타이머 사이트 스크린샷" loading="lazy">
+            <div class="project-desc">
+              <p>시계·알람·타이머·스톱워치 기능을 갖춘 웹사이트입니다. 스마트폰 타이머는 알람음을 원하는 대로
+              설정하기 어려운 경우가 많아, 원하는 알람음을 직접 설정할 수 있는 웹 타이머를 만들고 싶어 제작했습니다.</p>
+              <p class="project-stack">HTML · CSS · JavaScript</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-num">03</span>
+            <div class="project-title">
+              <span class="project-cat">Personal · C</span>
+              <h3>C언어 미니 프로젝트</h3>
+            </div>
+          </div>
+          <div class="project-body no-image">
+            <div class="project-desc">
+              <p>C언어 문법과 로직 구현 연습을 위해 만든 콘솔 기반 간단한 게임들입니다.
+              (구체적인 목록·깃허브 링크는 추가 예정)</p>
+              <p class="project-stack">C</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="carousel-controls">
+      <button class="car-btn car-prev" aria-label="이전 프로젝트">‹</button>
+      <div class="carousel-dots">
+        <button class="dot" data-i="0" aria-label="1번 프로젝트"></button>
+        <button class="dot" data-i="1" aria-label="2번 프로젝트"></button>
+        <button class="dot" data-i="2" aria-label="3번 프로젝트"></button>
+      </div>
+      <button class="car-btn car-next" aria-label="다음 프로젝트">›</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HISTORY (자격증/수상) ===== -->
+<section id="history" class="history">
+  <h2 class="section-heading grad fade-in">Certificates & Awards</h2>
+
+  <h3 class="history-sub fade-in">자격증</h3>
+  <div class="history-grid fade-in" data-delay="100">
+    <div class="history-card">
+      <span class="hc-icon">🏅</span>
+      <h3>ITQ OA Master</h3>
+      <p>2024.02.22 취득</p>
+    </div>
+    <div class="history-card">
+      <span class="hc-icon">🎨</span>
+      <h3>웹디자인기능사</h3>
+      <p>2024.07.03 취득</p>
+    </div>
+    <div class="history-card">
+      <span class="hc-icon">📊</span>
+      <h3>ITQ 한글엑셀 A등급</h3>
+      <p>2023.11.30 취득</p>
+    </div>
+    <div class="history-card">
+      <span class="hc-icon">📝</span>
+      <h3>ITQ 아래한글 A등급</h3>
+      <p>2024.02.22 취득</p>
+    </div>
+    <div class="history-card">
+      <span class="hc-icon">📽️</span>
+      <h3>ITQ 한글파워포인트 A등급</h3>
+      <p>2024.02.22 취득</p>
+    </div>
+    <div class="history-card">
+      <span class="hc-icon">🚗</span>
+      <h3>운전면허 1종 보통(자동)</h3>
+      <p>2025.02.05 취득</p>
+    </div>
+  </div>
+
+  <h3 class="history-sub fade-in">수상</h3>
+  <div class="history-grid fade-in" data-delay="100">
+    <div class="history-card">
+      <span class="hc-icon">🏆</span>
+      <h3>2023 과학상자 모빌리티 코딩 경진대회(중고등부) 대상</h3>
+      <p>과학상자 대전지사 · 2023.10.09</p>
+    </div>
+    <div class="history-card">
+      <span class="hc-icon">🎮</span>
+      <h3>교과 우수상 (게임 프로그래밍)</h3>
+      <p>세종장영실고등학교 · 2023.07.19</p>
+    </div>
+    <div class="history-card">
+      <span class="hc-icon">📢</span>
+      <h3>교과 우수상 (광고 콘텐츠 제작)</h3>
+      <p>세종장영실고등학교 · 2023.07.19</p>
+    </div>
+    <div class="history-card">
+      <span class="hc-icon">🌟</span>
+      <h3>학급 활동 우수상</h3>
+      <p>세종장영실고등학교 · 2023.01.04</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<footer id="contact" class="contact">
+  <h2 class="section-heading grad fade-in">Let's Connect</h2>
+  <p class="fade-in" data-delay="100">궁금한 점이 있으시면 편하게 연락 주세요.</p>
+  <a class="btn-gradient fade-in" data-delay="200" href="mailto:k44878741@gmail.com">k44878741@gmail.com</a>
+  <a class="btn-ghost contact-github fade-in" data-delay="280" href="https://github.com/temkair" target="_blank" rel="noopener">github.com/temkair</a>
+  <p class="footer-note">© 2026 Song Seongyun. Hannam University AI Convergence.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
